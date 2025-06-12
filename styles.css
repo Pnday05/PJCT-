@@ -1,0 +1,55 @@
+/* General reset */
+* {
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+
+.logo {
+    width: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.nav__link {
+    display: flex;
+    list-style: none;
+}
+
+.nav_links a {
+    padding: 0 20px;
+    text-decoration: none;
+    transition: color 0.3ms;
+}
+
+.nav_links a:hover {
+    color: #007bff;
+}
+
+/* Header Section */
+.section__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
