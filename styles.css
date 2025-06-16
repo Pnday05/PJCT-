@@ -1,6 +1,6 @@
 /* General reset */
 * {
-  padding: 2px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -12,7 +12,25 @@ body {
   color: #333;
 }
 
+.purple {
+    color: purple;
+}
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position:  sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
 /* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .logo {
     width: 50px;
@@ -23,6 +41,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    
 }
 
 
@@ -34,21 +53,87 @@ nav {
 .nav_links a {
     padding: 0 20px;
     text-decoration: none;
-    transition: color 0.3ms;
+    transition: color cubic-bezier(0.165, 0.84, 0.44, 1) 0.3ms ease;
 }
 
 .nav_links a:hover {
-    color: #007bff;
+    color: purple;
 }
 
 /* Header Section */
 .section__wrapper {
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    background-color: rgb(239, 233, 225);
 }
 
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.img__strip, h1, p {
+    padding-bottom: 20px;
 }
+
+.img__strip--img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.container__features {
+    padding: 20px 20px;
+    background-color: #e0e6e6b7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__features p {
+    margin-bottom: 9px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container__features h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* featiures */
+.features__wrapper {
+  display: flex;
+  flex-wrap: block;
+    justify-content: center;
+  gap: 20px; /* space between columns/rows */
+ 
+}
+
+.feature {
+  padding: 16px;
+  text-align: center;
+  width: 300px; /* fixed width for each feature */
+}
+
+.feature img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature__img {
+  width: 40px;                /* or any fixed width */
+  height: 40px;               /* match the width for a perfect circle */
+  border-radius: 100px;         /* makes the image round */
+  border: 3px solid #afacac;     /* adjust border thickness and color */
+  object-fit: cover;             /* keeps the image from stretching */
+  padding: 6px 6px 6px 6px; /* padding inside the border */
+  margin: 0 auto; /* centers the image */
+}
+
+.feature h3 {
+    margin: 0 auto;
+    padding-left: 100px;
+  font-size: 24px;
+}
+
+
+
+
