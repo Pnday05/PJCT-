@@ -100,41 +100,34 @@ nav {
 
 /* featiures */
 .features__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:  wrap;
   gap: 40px 60px;
   justify-content: center;
   padding: 40px;
+ 
 }
 
 .feature {
-  width: calc(100 / 3 );
-  max-width: 300px;
+  padding: 16px;
   text-align: center;
 }
 
+.feature img {
+  width: 40px;
+  height: 40px;
+}
+
 .feature__img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: 2px solid #a855f7; 
-  padding: 12px;
-  object-fit: cover;
-  background-color: #f5f3ff; 
-  margin-bottom: 16px;
-}
-
-h3 {
-  margin: 0 0 8px;
-  font-size: 1.1rem;
-  color: #1e1e1e;
-}
-
-p {
-  margin: 0;
-  color: #555;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  width: 20px;                /* or any fixed width */
+  height: 20px;               /* match the width for a perfect circle */
+  border-radius: 100px;         /* makes the image round */
+  border: 3px solid #afacac;     /* adjust border thickness and color */
+  object-fit: cover;             /* keeps the image from stretching */
+  padding: 6px 6px 6px 6px; /* padding inside the border */
+  margin: 0 auto; /* centers the image */
 }
 
 
