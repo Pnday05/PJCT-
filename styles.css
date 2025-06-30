@@ -213,7 +213,6 @@ nav {
   padding: 4rem 2rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 
 /* Flex Container */
@@ -225,14 +224,14 @@ nav {
 }
 
 .steps__image img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
 /* Right Content */
 .steps__content {
   flex: 1;
-  min-width: 250px;
+  width: 40%;
 }
 
 .steps__header .purple {
@@ -276,3 +275,339 @@ nav {
   color: #333;
 }
 
+/* pricing */
+.pricing__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0px 80px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.business__pricing,
+.enterprise__pricing,
+.personal__pricing {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.business__pricing h2,
+.enterprise__pricing h2,
+.personal__pricing h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.business__pricing p,
+.enterprise__pricing p,
+.personal__pricing p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.business__pricing img,
+.enterprise__pricing img,
+.personal__pricing img {
+  width: 100%;
+  height: auto;
+}
+
+.business__pricing {
+  background-color: rgb(113, 62, 189);
+  color: white;
+}
+
+.container__pricing {
+  padding: 20px 40px;
+}
+
+/* buttons */
+.personal__button {
+  background-color: rgb(72, 217, 171);
+  color: white;
+  align-items: center;
+  }
+
+  .business__button {
+    background-color: white;
+    color: rgb(193, 31, 177);
+    align-items: center;
+  }
+
+  .enterprise__button {
+    background-color: rgb(207, 61, 61);
+    color: white;
+    align-items: center;
+  }
+
+.business__button,
+.enterprise__button,
+.personal__button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.personal__button:hover {
+  background-color: #5a2d8c;
+}
+
+.enterprise__button:hover {
+  background-color: #2b12b7;
+}
+
+.business__button:hover {
+  background-color: #20d416;
+}
+
+.price__value {
+font-size: large;
+font-weight: bolder;
+}
+
+/* FAQ Section */
+.container__faq {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  gap: 20px;
+  background-color: #131589;
+
+}
+.container__faq h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.container__faq button {
+  padding: 10px 14px;
+  margin: 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 2px solid rgb(183, 178, 178);
+}
+
+.get-started {
+  background-color: #c75447;
+  color: white;
+}
+
+.contact-us {
+  background-color: #131589;
+  color: white;
+}
+
+/* Footer */
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #921a9a;
+  padding: 20px 20px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.footer__p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.footer__logo {
+  width: 40px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #921a9a;
+}
+
+.footer__content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer__content a:hover {
+  color: #d9dbe7b7;
+}
+
+.footer__content i {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* SMALL PHONES, TABLETS */
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step__number {
+    margin-bottom: 0.5rem;
+  }
+  .step__info {
+    text-align: center;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content a {
+    margin: 5px 0;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step__number {
+    margin-bottom: 0.5rem;
+  }
+  .step__info {
+    text-align: center;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content a {
+    margin: 5px 0;
+  }
+}
+
+/* LARGE PHONES */
+@media (max-width: 600px) {
+  .section__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__wrapper--para {
+    text-align: center;
+  }
+  .img__strip--img {
+    max-width: 100%;
+  }
+  .container__features {
+    padding: 20px;
+  }
+  .features__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+  .section__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__wrapper--para {
+    text-align: center;
+  }
+  .img__strip--img {
+    max-width: 100%;
+  }
+  .container__features {
+    padding: 20px;
+  }
+  .features__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+  .section__wrapper {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .section__wrapper--para {
+    text-align: left;
+  }
+  .img__strip--img {
+    max-width: 600px;
+  }
+  .container__features {
+    padding: 40px;
+  }
+  .features__wrapper {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {  
+  .section__wrapper {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .section__wrapper--para {
+    text-align: left;
+  }
+  .img__strip--img {
+    max-width: 600px;
+  }
+  .container__features {
+    padding: 40px;
+  }
+  .features__wrapper {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
